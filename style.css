@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-gap: 2px;
+  grid: repeat(3, 1fr) / repeat(2, 1fr);
+  grid-template-areas:
+    "p b"
+    "y y"
+    "g r";
+  height: 100%;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box label {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+input {
+  padding: 0.3rem 0.5rem;
+  border: none;
+  border-radius: 3px;
+  width: 100px;
+}
+
+input:focus {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  outline: 1px solid rgba(0, 0, 0, 0.336);
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.one {
+  background: #3185fc;
+  grid-area: p;
+}
+
+.two {
+  background: #f9dc5c;
+  grid-area: b;
+}
+
+.three {
+  background: #e84855;
+  grid-area: y;
+  color: white;
+}
+
+.four {
+  background: #26c485;
+  grid-area: g;
+}
+
+.five {
+  background: #254e70;
+  grid-area: r;
+  color: white;
+}
+
+button {
+  border: none;
+  background: white;
+  margin-top: 0.7rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 3px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: inset 0 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 580px) {
+  .container {
+    grid-gap: 0;
+    grid: repeat(5, 1fr) / 1fr;
+    grid-template-areas:
+      "p"
+      "b"
+      "y"
+      "g"
+      "r";
+  }
+
+  .box {
+    padding: 2rem;
+  }
+}

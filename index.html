@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box one">
+            <label for="num-input">Enter 3 numbers<br>seperated by commas<br>(no spaces):</label>
+            <input type="text" id="num-input">
+            <button>Get Largest</button>
+            <p id='num-output'></p>
+        </div>
+
+        <div class="box two">
+            <label for="c">Convert Celsius to Fahrenheit:</label>
+            <input type="number" id="c">
+            <button onclick="celsiusToFahrenheit()">Convert</button>
+            <p id='f-output'></p>
+        </div>
+
+
+        <div class="box three">
+            <label for="f">Convert Fahrenheit to Celsius:</label>
+            <input type="number" id="f">
+            <button onclick="fahrenheitToCelsius()">Convert</button>
+            <p id='c-output'></p>
+        </div>
+
+        <div class="box four">
+            <label for="z">Enter strings or numbers<br>separated by commas:</label>
+            <input type="text" id="z">
+            <button>Show index</button>
+            <p id=''></p>
+        </div>
+
+        <div class="box five">
+            <label for="student-input">Enter an activity:</label>
+            <input type="text" id="student-input">
+            <button onclick="filterActivity()">Filter by activity</button>
+            <p id='student-output'></p>
+        </div>
+    </div>
+
+
+    <script src="largestNum.js"></script>
+    <script src="cToF.js"></script>
+    <script src="fToC.js"></script>
+    <script src="students.js"></script>
+</body>
+
+</html>
