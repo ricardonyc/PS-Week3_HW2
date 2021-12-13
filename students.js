@@ -58,6 +58,36 @@ const students = [
     activity: "volleyball",
     gender: "male",
   },
+  {
+    name: "Aaron",
+    activity: "cooking",
+    gender: "male",
+  },
+  {
+    name: "Ricardo",
+    activity: "cooking",
+    gender: "male",
+  },
+  {
+    name: "Leslie",
+    activity: "coding",
+    gender: "male",
+  },
+  {
+    name: "Emma",
+    activity: "running",
+    gender: "male",
+  },
+  {
+    name: "Xavier",
+    activity: "gaming",
+    gender: "male",
+  },
+  {
+    name: "Stephanie",
+    activity: "running",
+    gender: "male",
+  },
 ];
 
 const filterActivity = () => {
