@@ -14,7 +14,7 @@ const students = [
   },
   {
     name: "Jessica",
-    activity: "archery",
+    activity: "volleyball",
     gender: "female",
   },
   { name: "Edward", activity: "swimming", gender: "male" },
@@ -25,21 +25,50 @@ const students = [
   },
   {
     name: "Julie",
-    activity: "bowling",
+    activity: "football",
     gender: "female",
+  },
+  {
+    name: "Youssouf",
+    activity: "football",
+    gender: "male",
+  },
+  {
+    name: "Anthony",
+    activity: "wrestling",
+    gender: "male",
+  },
+  {
+    name: "Stacey",
+    activity: "basketball",
+    gender: "male",
+  },
+  {
+    name: "Sarah",
+    activity: "soccer",
+    gender: "female",
+  },
+  {
+    name: "Dillon",
+    activity: "cooking",
+    gender: "male",
+  },
+  {
+    name: "Patrick",
+    activity: "volleyball",
+    gender: "male",
   },
 ];
 
-
-
-
 const filterActivity = () => {
   const input = document.getElementById("student-input").value;
-  if(!input){
-    studentOutput.innerHTML = "Please enter an activity"
+  if (!input) {
+    studentOutput.innerHTML = "Please enter an activity";
+  } else {
+    let filtered = students
+      .filter((x) => (x.activity === input ? x.activity : false))
+      .map((x) => `${x.name} enjoys ${x.activity}`)
+      .join(", ");
+    studentOutput.innerHTML = filtered;
   }
-  let filtered = students.filter(x => x.activity === input ? x.activity : false)
-  studentOutput.innerHTML = JSON.stringify(filtered[0].name)
 };
-
-
