@@ -103,7 +103,7 @@ const students = [
 const filterActivity = () => {
   const input = document.getElementById("student-input").value;
   if (!input) {
-    studentOutput.innerHTML = "Please enter an activity";
+    studentOutput.innerHTML = "Please enter an activity ):";
   } else {
     let filtered = students
       .filter((x) => (x.activity === input ? x.activity : false))

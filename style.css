@@ -7,6 +7,15 @@ body {
   height: 100vh;
 }
 
+h3 {
+  font-weight: lighter;
+  text-align: center;
+}
+
+a {
+  color: black;
+}
+
 .container {
   display: grid;
   grid-gap: 2px;
@@ -79,6 +88,7 @@ input:focus {
 }
 
 button {
+  color: black;
   border: none;
   background: white;
   margin-top: 0.7rem;

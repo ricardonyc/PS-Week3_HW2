@@ -6,13 +6,11 @@ function largestNum() {
   let newer = numInput.split(",").map((x) => Number(x));
   let newest = newer.reduce((a, b) => (a > b ? a : b));
   if (!numInput) {
-    largestNumOutput.innerHTML = `Please enter a number :(`;
+    largestNumOutput.innerHTML = `Please enter a number :/`;
   } else {
     largestNumOutput.innerHTML = `The largest number is: ${newest}`;
   }
 }
-
-
 
 
 

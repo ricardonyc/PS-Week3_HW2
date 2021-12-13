@@ -10,7 +10,7 @@ const mapOutput = document.getElementById("map-output");
 const display = () => {
   const userInput = document.getElementById("map").value;
   if (!userInput) {
-    mapOutput.innerHTML = "Error :(";
+    mapOutput.innerHTML = "Give some input :(";
   } else {
     const newArray = userInput
       .split(",")
