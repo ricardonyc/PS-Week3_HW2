@@ -8,11 +8,15 @@ body {
 }
 
 h3 {
-  font-weight: lighter;
   text-align: center;
 }
 
 a {
+  color: black;
+  text-align: center;
+}
+
+a:visited{
   color: black;
 }
 
@@ -32,7 +36,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .box label {
