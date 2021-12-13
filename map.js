@@ -14,7 +14,7 @@ const display = () => {
   } else {
     const newArray = userInput
       .split(",")
-      .map((x, index) => ` ${x} is at index ${index}`);
+      .map((x, index) => ` "${x}" is at index ${index}`);
     mapOutput.innerHTML = newArray;
   }
 };
