@@ -9,7 +9,7 @@ const studentOutput = document.getElementById("student-output");
 const students = [
   {
     name: "Steve",
-    activity: "swimming",
+    activity: "basketball",
     gender: "male",
   },
   {
@@ -20,35 +20,26 @@ const students = [
   { name: "Edward", activity: "swimming", gender: "male" },
   {
     name: "Molly",
-    activity: "soccer",
+    activity: "swimming",
     gender: "female",
   },
   {
     name: "Julie",
-    activity: "swimming",
+    activity: "bowling",
     gender: "female",
   },
 ];
 
-//
+
+
 
 const filterActivity = () => {
   const input = document.getElementById("student-input").value;
-  // let filtered = students.filter(x => x.activity === 'swimming' ? studentOutput.innerHTML = `${x.name} enjoys swimming!` : false)
-  let filtered = students.filter((x) => {
-    if (!input) {
-      studentOutput.innerHTML = `Please enter something :(`;
-    } else if (x.activity === input){
-        studentOutput.innerHTML = `${x.name} enjoys ${x.activity}!`
-    } else {
-        studentOutput.innerHTML = `Nothing found :/`
-    }
-  });
-  // studentOutput.innerHTML = filtered
+  if(!input){
+    studentOutput.innerHTML = "Please enter an activity"
+  }
+  let filtered = students.filter(x => x.activity === input ? x.activity : false)
+  studentOutput.innerHTML = JSON.stringify(filtered[0].name)
 };
 
-// function filter(arr) {
-//   let x = students.filter(x => x.activity === 'swimming' ? console.log(`${x.name} enjoys swimming!`) : false)
-// }
 
-// console.log(filter(students));
