@@ -64,19 +64,19 @@ const students = [
     gender: "male",
   },
   {
-    name: "Ricardo",
+    name: "Tushar",
     activity: "cooking",
     gender: "male",
   },
   {
     name: "Leslie",
     activity: "coding",
-    gender: "male",
+    gender: "female",
   },
   {
     name: "Emma",
     activity: "running",
-    gender: "male",
+    gender: "female",
   },
   {
     name: "Xavier",
@@ -86,7 +86,17 @@ const students = [
   {
     name: "Stephanie",
     activity: "running",
+    gender: "female",
+  },
+  {
+    name: "James",
+    activity: "dancing",
     gender: "male",
+  },
+  {
+    name: "Alina",
+    activity: "coding",
+    gender: "female",
   },
 ];
 
