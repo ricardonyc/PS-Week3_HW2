@@ -1,16 +1,30 @@
 // 1. Define a function maxOfThree that takes three numbers as arguments and returns the largest of them.
 const largestNumOutput = document.getElementById("num-output");
 
+// function largestNum() {
+//   const numInput = document.getElementById("num-input").value;
+//   let newer = numInput.split(",").map((x) => Number(x));
+//   let newest = newer.reduce((a, b) => (a > b ? a : b));
+//   if (!numInput) {
+//     largestNumOutput.innerHTML = `Please enter a number :/`;
+//   } else {
+//     largestNumOutput.innerHTML = `The largest number is: ${newest}`;
+//   }
+// }
+
+
 function largestNum() {
   const numInput = document.getElementById("num-input").value;
-  let newer = numInput.split(",").map((x) => Number(x));
-  let newest = newer.reduce((a, b) => (a > b ? a : b));
+  let largest = numInput
+    .split(",").map((x) => Number(x))
+    .reduce((a, b) => (a > b ? a : b))
   if (!numInput) {
     largestNumOutput.innerHTML = `Please enter a number :/`;
   } else {
-    largestNumOutput.innerHTML = `The largest number is: ${newest}`;
+    largestNumOutput.innerHTML = `The largest number is: ${largest}`;
   }
 }
+
 
 
 
